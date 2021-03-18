@@ -30,11 +30,14 @@
             var pe = Number(txtpe.value)
             res.innerHTML = `A sua temperatura do pasciente está em ${pe}!`
             if (pe > '37.0') {
-                res.innerHTML = 'Pasciente  está com febre,  precisa ser medicado!'
+                res.innerHTML = '<p>Pasciente  está com febre,  precisa ser medicado!</p>'
+                
             } else {
-                res. innerHTML = 'Pasciente não està com febre! '
+                res. innerHTML = '<p>Pasciente não està com febre,Está liberado!</p> '
+                
+                }
             }
-        }
+        
     </script>
 </body>
 </html>
