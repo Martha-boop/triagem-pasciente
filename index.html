@@ -8,10 +8,23 @@
 </head>
 <body>
     <h1>Checando a Temperatura.</h1>
-    Qual a temperatuara atual?<input type="number" name="txtpe" id="txtpe">
+    Qual a temperatuara atual do pasciente? <input type="number" name="txtpe" id="txtpe">
     <input type="button" value="verificar" onclick="clicar()">
     <div id="res">
 
     </div>
+    <script>
+        function clicar() {
+            var txtpe = window.document.querySelector('input#txtpe')
+            var res = window.document.querySelector('div#res')
+            var pe = Number(txtpe.value)
+            res.innerHTML = `A sua temperatura do pasciente está em ${pe}!`
+            if (pe > '37.0') {
+                res.innerHTML = 'Pasciente  está com febre,  precisa ser medicado!'
+            } else {
+                res. innerHTML = 'Pasciente não està com febre! '
+            }
+        }
+    </script>
 </body>
 </html>
