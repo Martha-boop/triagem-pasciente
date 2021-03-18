@@ -1,0 +1,2 @@
+# triagem-pasciente
+ triagem-pasciente
